@@ -1,6 +1,6 @@
-# Modelagem do Banco de Dados
+# Modelagem Relacional e Dimensional de uma Locadora de Veículos
 
-Esse projeto consiste na normalização de uma base de dados de uma concessionária fictícia e depois na criação do modelo dimensional, baseado no seu modelo relacional.
+Esse projeto consiste na normalização de uma base de dados de uma locadora de carros fictícia e depois na criação do modelo dimensional, baseado no seu modelo relacional.
 
 # Etapas
 
