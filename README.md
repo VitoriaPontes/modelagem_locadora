@@ -19,7 +19,7 @@ Projeto de **modelagem relacional e dimensional** para uma locadora de veículos
 - **Modelagem Relacional**
 - **Normalização**
 - **Modelagem Dimensional / Star Schema**
-- **Data Warehouse — conceitos**
+- **Conceitos de Data Warehouse**
 
 ## Estrutura do projeto
 
