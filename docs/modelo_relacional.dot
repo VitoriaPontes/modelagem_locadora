@@ -1,0 +1,16 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.8", fontname="Arial"];
+  node [shape=plain, fontname="Arial"];
+  edge [color="#6b7280", penwidth=1.2, arrowsize=0.7, fontname="Arial", fontsize=9];
+  tb_cidade [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#1f2937"><FONT COLOR="white"><B>tb_cidade</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idCidade</TD></TR><TR><TD ALIGN="LEFT">cidade</TD></TR><TR><TD ALIGN="LEFT">estado</TD></TR><TR><TD ALIGN="LEFT">pais</TD></TR></TABLE> >];
+  tb_cliente [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#1f2937"><FONT COLOR="white"><B>tb_cliente</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idCliente</TD></TR><TR><TD ALIGN="LEFT">nomeCliente</TD></TR><TR><TD ALIGN="LEFT">FK idCidade</TD></TR></TABLE> >];
+  tb_carro [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#1f2937"><FONT COLOR="white"><B>tb_carro</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idCarro</TD></TR><TR><TD ALIGN="LEFT">chassiCarro</TD></TR><TR><TD ALIGN="LEFT">marcaCarro</TD></TR><TR><TD ALIGN="LEFT">modeloCarro</TD></TR><TR><TD ALIGN="LEFT">anoCarro</TD></TR></TABLE> >];
+  tb_combustivel [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#1f2937"><FONT COLOR="white"><B>tb_combustivel</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idCombustivel</TD></TR><TR><TD ALIGN="LEFT">tipoCombustivel</TD></TR></TABLE> >];
+  tb_vendedor [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#1f2937"><FONT COLOR="white"><B>tb_vendedor</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idVendedor</TD></TR><TR><TD ALIGN="LEFT">nomeVendedor</TD></TR><TR><TD ALIGN="LEFT">sexoVendedor</TD></TR><TR><TD ALIGN="LEFT">estadoVendedor</TD></TR></TABLE> >];
+  tb_locacao [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="#111827"><FONT COLOR="white"><B>tb_locacao</B></FONT></TD></TR><TR><TD ALIGN="LEFT">PK idLocacao</TD></TR><TR><TD ALIGN="LEFT">FK idCliente</TD></TR><TR><TD ALIGN="LEFT">FK idCarro</TD></TR><TR><TD ALIGN="LEFT">FK idCombustivel</TD></TR><TR><TD ALIGN="LEFT">FK idVendedor</TD></TR><TR><TD ALIGN="LEFT">kmCarro</TD></TR><TR><TD ALIGN="LEFT">dataLocacao / horaLocacao</TD></TR><TR><TD ALIGN="LEFT">qtdDiaria / vlrDiaria</TD></TR><TR><TD ALIGN="LEFT">dataEntrega / horaEntrega</TD></TR></TABLE> >];
+  tb_cidade -> tb_cliente [label="1 : N"];
+  tb_cliente -> tb_locacao [label="1 : N"];
+  tb_carro -> tb_locacao [label="1 : N"];
+  tb_combustivel -> tb_locacao [label="1 : N"];
+  tb_vendedor -> tb_locacao [label="1 : N"];
+}
