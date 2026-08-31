@@ -299,13 +299,11 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    from tb_cliente
    join tb_cidade on tb_cidade.cidade = tb_cliente.cidadeCliente
    ```
-    ![evidencia](../Evidencias/Desafio/parte2_1.png)
 
    ```
    select *
    from dim_cliente
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_2.png)
 
 2. Criação e visualização da dimensão carro.
    ```
@@ -317,13 +315,13 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    	anoCarro as ano
    from tb_carro
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_3.png)
+
    
    ```
    select *
    from dim_carro
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_4.png)
+
 
 3. Criação e visualização da dimensão combustível.
    ```
@@ -333,13 +331,11 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    	tipoCombustivel as tipo
    from tb_combustivel
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_5.png)
 
    ```
    select *
    from dim_combustivel
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_6.png)
 
 4. Criação e visualização da dimensão vendedor.
    ```
@@ -351,13 +347,10 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    	estadoVendedor
    from tb_vendedor
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_7.png)
-
    ```
    select *
    from dim_vendedor
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_8.png)
 
 5. Criação e visualização da dimensão data.
    ```
@@ -384,13 +377,11 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    	'entrega' as tipo
    from tb_locacao;
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_9.png)
 
    ```
    select *
    from dim_data
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_10.png)
 
 6. Criação e visualização da dimensão fato.
    ```
@@ -407,13 +398,11 @@ Para a criação do Modelo Dimensional, são criadas dimensões que ajudam a ter
    	idVendedor
    from tb_locacao
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_11.png)
    
    ```
    select *
    from fato_locacao
    ```
-   ![evidencia](../Evidencias/Desafio/parte2_12.png)
 
 ### Diagrama do Modelo Dimensional
 
