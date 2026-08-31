@@ -1,4 +1,4 @@
-# Modelagem de Banco de Dados — Locadora de Veículos
+# Modelagem de Banco de Dados: Locadora de Veículos
 
 Projeto de **modelagem relacional e dimensional** para uma locadora de veículos fictícia. A proposta é transformar uma base inicialmente desnormalizada em um modelo relacional com integridade referencial e, a partir dele, construir um modelo dimensional em estrela para consultas analíticas.
 
@@ -139,10 +139,3 @@ Modelo Dimensional
         ↓
 Consultas Analíticas
 ```
-
-## Projeto para currículo
-
-**Modelagem de Banco de Dados — Locadora de Veículos**  
-`SQL` · `SQLite` · `Modelagem Relacional` · `Normalização` · `Modelo Dimensional`
-
-> Desenvolvimento de um projeto de modelagem de banco de dados para uma locadora de veículos, aplicando normalização, integridade referencial e modelagem relacional. Implementação de um modelo dimensional em estrela com tabela fato, dimensões e medidas para suporte a consultas analíticas, utilizando SQL e SQLite.
